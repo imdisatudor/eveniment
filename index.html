@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Little Dream Big</title>
+	<meta name="author" content ="Disa Tudor">
+	<meta name="description" content ="The little dream big is an annual charity event where famous bands and artists come together and raise money to help the children in foster care make their dreams come true.">
+	<meta name="keywords" content ="music, concert, dreams come true, foster care, The Little Dream Big, charity, Kevin&Ty, Autumn Madness, Laura Ronnie, James Veane, CopperRed, Lightin' the Storm">
+	<link rel="stylesheet" type="text/css" href="stiluri.css">
+</head>
+
+<body>
+
+<header>
+	
+	<a href="index.html"><img src="imagini/logo.png" alt="Event's logo"></a>
+	<h1>The Little Dream Big</h1>
+	<nav>
+		<ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="program.html">Schedule</a></li>
+			<li><a href="bilete.html">Products</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>	
+
+</header>
+
+<main>
+	
+	<div class="fundal">
+		<div class="overlay">
+			<div class="text">23rd December 2021<br>Arena Națională Bucharest<br>2pm - 11pm</div>
+		</div>
+	</div>
+	
+	<h2>Our Story</h2>
+	
+	<div class="rand">
+		<section class="sectiune"><p>When she was 7, Diana Stan was placed in foster care, after the loss of both her parents and also her dog. Growing up, she had a dream – she wanted to be a famous singer. However, the children in the system were not given the chance to make their dreams come true. So she was forced to pursue another path.<br><br>At 23 years old, she married rich. Real rich. Her husband, Count Reginald Wolfshire, 52, dedicated his life to making his young and beautiful countess happy. So when she wanted to help the children in the system make their dreams come true, the two immediately started organizing the first edition of “The Little Dream Big”.<br><br>Seven editions later, the annual event keeps supporting the little ones with the help and contribution of numerous famous artists.</p></section>
+		<section class="sectiune"><img src="imagini/diana.jpg" alt="Young Diana singing on the street"></section>
+	</div>
+	
+	<h2>Event starts in:</h2>
+	
+	<p class="timer" id="demo"></p>
+
+<script>
+var countDownDate = new Date("Dec 23, 2021 14:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+     
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Sorry! Event's over. Return for next year's edition.";
+  }
+}, 1000);
+</script>
+	
+</main>
+
+<footer>
+	<div class="copyright"><p>Copyright &copy 2021 Disa Tudor</p></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/The-Little-Dream-Big-101361972364816"><img src="imagini/facebook.png" alt="facebook logo"></a>
+		<a href="https://www.instagram.com/thelittledreambigofficial/"><img src="imagini/insta.png" alt="instagram logo"></a>
+		<a href="mailto:the.little.dream.big@gmail.com"><img src="imagini/gmail.png" alt="gmail logo"></a>
+	</div>
+</footer>
+
+</body>
+	
+</html>

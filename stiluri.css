@@ -1,0 +1,486 @@
+* {
+	box-sizing: border-box;
+	}
+	
+body {
+	background-image: linear-gradient(to bottom right, DarkRed, Cornsilk);
+	margin: 0;
+}
+	
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 110px;
+	width: 100%;
+	background-color: Black;
+	opacity: 0.9;
+	z-index: 100;
+}
+
+main {
+	position: relative;
+	top: 100px;
+	left: 0px;
+	margin-bottom: 160px;
+}
+
+footer {
+	background-color: Black;
+	height: 104px;
+	bottom: 0;
+	opacity: 0.9;
+}
+	
+header img {
+	padding: 5px 10px;
+	height: 100%;
+}
+	
+h1 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 38px;
+	color: Cornsilk;
+	display: inline;
+	padding-left: 15px;
+	vertical-align: 100%;
+}
+	
+h2 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 32px;
+	padding:25px;
+	color: Cornsilk;
+	background-color: Black;
+	opacity: 0.8;
+}
+
+h3 {
+	background-color: Cornsilk;
+	padding: 5px 25px;
+	font-size: 22px;
+	opacity: 0.8;
+	font-family: "Courier New", Courier, monospace;
+}
+
+hr {
+	width: 100%;
+	height: 0px;
+	color: DarkGrey;
+}
+
+header nav {
+	display: block;
+	float: right;
+}
+
+header nav ul {
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+header nav li {
+	display: inline-block;
+	color: white;
+	padding: 10px;
+    font-size: 22px
+}
+
+header nav li a:hover {
+	background-color: Cornsilk;
+	color: black;
+}
+
+header nav li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+header nav li a.active {
+	padding: 10px;
+	background-color: Cornsilk;
+	color: black;
+}
+	
+.fundal {
+	margin: 20px;
+	margin-top: 40px;
+	background-image: url("imagini/fundal.jpg");
+	height: 480px;
+	position: relative;
+	top: 0;
+}
+
+.overlay {
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+}
+
+.text { 
+	color: white;
+	font-size: 36px;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	text-align: center;
+}
+	
+.rand {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: 40px;
+}
+
+.datecontact {
+	background-color: white;
+	margin: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.rand ul {
+	margin-block: 0px;
+	padding: 0px;
+}
+
+.rand li {
+	list-style-type: none;
+	padding: 20px 10px;
+}
+
+.rand li img {
+	width: 100px;
+}
+
+.telefon {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.telefon p {
+	size: 16px;
+	color: Black;
+	padding: 10px 5px;
+	background-color: DodgerBlue;
+	display: none;
+}
+
+.telefon:hover p {
+	display: initial;
+	padding: 10px 0px;
+	padding-right: 5px;
+	margin: 0px;
+}
+
+.telefon:hover img {
+	width: 92px;
+}
+
+.telefon:hover {
+	padding: 0px;
+}
+
+.sectiune {
+	width: 584px;
+	height: 357px;
+	margin: 10px;
+	background-color: BlanchedAlmond;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+	
+.sectiune p {
+	padding: 52px 40px;
+    text-align: justify;
+    margin: 0;
+}
+	
+.timer {
+  text-align: center;
+  font-size: 60px;
+}
+
+.linie-program {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: 150px;
+}
+	
+.caseta {
+	background-color: white;
+	margin: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.caseta h4 {
+	font-size: 28px;
+	text-align: center;
+}
+	
+.ora {
+	background-color: DarkRed;
+	color: Cornsilk;
+	padding: 5px 10px;
+	margin: 5px;
+	text-align: center;
+}
+	
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	column-gap: 100px;
+}
+	
+.bilet {
+	width: 300px;
+	height: 400px;
+	background-color: BlanchedAlmond;
+	margin-bottom: 10px;
+	position: relative;
+	border: 2px solid black;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pozica {
+	width: 296px;
+}
+
+.detalii {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+	border-radius: 12px;
+}
+	
+.bilet h4 {
+	background-color: black;
+	color: DarkSalmon;
+	padding: 5px 15px;
+	font-size: 28px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.bilet:hover h4{
+	display: none;
+}
+
+.bilet:hover img{
+	display: none;
+}
+	
+.bilet a {
+	color: AliceBlue;
+	text-decoration: none;
+}
+
+.bilet:hover a{
+	color: DarkBlue;
+	transition: .5s ease;
+}
+	
+.bilet a:hover {
+	color: DeepPink;
+	text-decoration: none;
+}
+	
+.buy-here {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	background-color: Black;
+	color: DarkSalmon;
+	padding: 10px;
+	font-size: 22px;
+}
+
+.bilet:hover .buy-here {
+	background-color: BlanchedAlmond;
+	transition: .5s ease;
+	color: DarkRed;
+}
+
+.qr {
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.qr2 {
+	display: none;
+}
+
+.bilet:hover .qr2 {
+	display: initial;
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	transition: .5s ease;
+}
+
+.detalii li {
+	padding: 10px;
+	font-size: 20px;
+	color: BlanchedAlmond;
+}
+
+.bilet ul {
+  list-style: none;
+  position: relative;
+}
+
+.bilet ul li:before {
+  content: '✓';
+  color: lightgreen;
+}
+
+.bilet:hover .detalii {
+	opacity: 0.9;
+	border: 10px;
+}
+
+.detalii img {
+	width: 140px;
+	padding: 5px;
+	display: none;
+	position: absolute;
+	bottom: 80px;
+	left: 20px;
+}
+
+.detalii:hover img {
+	display: initial;
+}
+
+
+.pret {
+	font-size: 40px;
+	padding: 20px;
+	position: absolute;
+	bottom: 120px;
+	right: 0px;
+	color: lightgreen;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+.merch {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	column-gap: 40px;
+}
+
+.promo {
+	width: 350px;
+	height: 600px;
+	margin-top: 20px;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}	
+		
+.copyright {
+	float: left;
+	color: Cornsilk;
+	font-size: 26px;
+	padding: 9px;
+	margin-left: 5px;
+}
+	
+.contact {
+	float: right;
+	display: inline;
+	margin-right: 20px;
+}
+
+.contact img {
+	width: 60px;
+	margin: 20px;
+}
+	
+.contact img:hover {
+	width: 72px;
+	margin: 14px;
+}
+
+.galerie {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	column-gap: 10px;
+}
+
+.cartonas {
+	width: 400px;
+	height: 360px;
+	background-color: white;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cartonas img {
+	width: 400px;
+	padding: 10px;
+}
+
+.cartonas h4 {
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+
+.poza-galerie {
+	width: 600px;
+	height: 400px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.poza-galerie p {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	padding: 20px;
+}	
+
+.pozica-galerie {
+	width: 400px;
+	height: 266px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.pozica-galerie p {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	padding: 20px;
+}
